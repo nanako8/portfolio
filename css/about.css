@@ -1,21 +1,21 @@
-.background-img{
-  width:100%;
+.background-img {
+  width: 100%;
   height: 50rem;
-  object-fit:cover
+  object-fit: cover;
 }
 
 /* .profile-img{
   width: 30%;
 } */
 
-.profile{
+.profile {
   margin: 20rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-h2{
+h2 {
   font-size: 5rem;
   letter-spacing: 0.5rem;
   font-weight: bolder;
@@ -23,19 +23,19 @@ h2{
   text-align: center;
 }
 
-.name-k{
+.name-k {
   font-size: 2rem;
 }
 
-.profile p{
+.profile p {
   margin: 6rem 0;
   /* text-align: center; */
   font-size: 2rem;
   line-height: 4rem;
 }
 
-.skills-wrapper h2, .strength-wrapper h2{
-  color:#FF7E90;
+.skills-wrapper h2, .strength-wrapper h2, .photos-wrapper h2 {
+  color: #FF7E90;
   margin-bottom: 6rem;
 }
 
@@ -51,14 +51,14 @@ h2{
   margin-bottom: 5.7rem;
 }
 
-h3{
+h3 {
   font-size: 3rem;
   font-family: 'Yu Gothic';
   margin-bottom: 1.5rem;
-  font-weight:500;
+  font-weight: 500;
 }
 
-p{
+p {
   font-size: 1.6rem;
   margin-bottom: 5.2rem;
   line-height: 3rem;
@@ -67,7 +67,7 @@ p{
   justify-content: center;
 }
 
-h4{
+h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,28 +98,14 @@ h4{
   }
 }
 
-
-
-/* @media (max-width: 1050px) {
-  .skills {
-    margin: 0;
-  }
-
-  .skill {
-    flex: 1 1 100%; /* 1列レイアウト */
-/* }
-} */
-
-
 @media (min-width: 901px) {
-
   .strength {
     display: flex;
     /* align-items: center; 縦方向の中央揃え */
     flex-wrap: wrap; /* 必要に応じて改行を許可 */
     /* float: left; */
-    margin:5rem 30rem;
-    height:15rem;
+    margin: 5rem 30rem;
+    height: 15rem;
     border-top: solid 2px rgb(232, 232, 235);
   }
   
@@ -136,32 +122,26 @@ h4{
     /* float:left; */
   }
 
-  .strength-title{
-    width:20rem;
-    margin-right:3rem
+  .strength-title {
+    width: 20rem;
+    margin-right: 3rem;
   }
-  
 }
 
-
-
-
-
 @media (max-width: 1200px) {
-  .strength{
-    height:15rem;
-    margin:5rem 20rem;
+  .strength {
+    height: 15rem;
+    margin: 5rem 20rem;
   }
-  .strength-title{
-    width:19rem;
+  .strength-title {
+    width: 19rem;
     /* margin-right:3rem */
   }
-  
 }
 
 @media (max-width: 900px) {
-  .strength-title{
-    width:30rem;
+  .strength-title {
+    width: 30rem;
     margin-bottom: 1rem;
     border-bottom: solid 2px rgb(232, 232, 235);
   }
@@ -170,7 +150,93 @@ h4{
     /* float: left; */
     flex-wrap: wrap; /* 必要に応じて改行を許可 */
     /* float: left; */
-    margin:2rem 7rem;
+    margin: 2rem 7rem;
   }
+}
 
+@media (max-width: 500px) {
+  .strength {
+    /* float: left; */
+    flex-wrap: wrap; /* 必要に応じて改行を許可 */
+    /* float: left; */
+    margin: 6rem 2rem;
+  }
+}
+
+.strength-wrapper {
+  margin-bottom: 20rem;
+}
+
+.photos-wrapper {
+  margin: 2rem;
+}
+
+.photos {
+  display: flex; /* 追加 */
+  flex-wrap: wrap; /* 追加 */
+  justify-content: center;
+}
+
+.photo-item {
+  position: relative; /* relativeにして内部要素を絶対位置に配置 */
+  width: 35%;
+  box-sizing: border-box;
+  margin: 5%;
+}
+
+.photo-item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 13/9; /* アスペクト比を指定 */
+  border-radius: 15px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease; /* スムーズなフェードアウト効果 */
+  object-fit: cover;
+}
+
+.photo-item p {
+  position: absolute; /* absoluteにして画像の中央に配置 */
+  top: 50%;
+  left: 10%;
+  transform: translate(-5%, -50%);
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  width: auto;
+  padding: 0 1rem; /* 文字の左右に適度な余白を追加 */
+  margin: 0; /* 余白をリセット */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.photo-item:hover img {
+  opacity: 0.2; /* ホバー時に画像を少し透明に */
+}
+
+.photo-item:hover h3, .photo-item:hover p {
+  opacity: 1; /* ホバー時に文字を表示 */
+}
+
+/* 画面の幅が1200px以下の場合 */
+@media (max-width: 1200px) {
+  .photo-item {
+    width: 40%;
+    margin: 3%;
+  }
+}
+
+/* 画面の幅が768px以下の場合 */
+@media (max-width: 768px) {
+  .photo-item {
+    width: 90%;
+    margin: 3rem 0;
+  }
+}
+
+/* 画面の幅が480px以下の場合 */
+@media (max-width: 480px) {
+  .photo-item {
+    width: 90%;
+    margin: 4rem 0;
+  }
 }
