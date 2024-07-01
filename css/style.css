@@ -1,0 +1,170 @@
+html {
+  font-family:'Yu Gothic UI','Yu Gothic', sans-serif;
+  color: rgb(33, 32, 29);
+  font-size: 62.5%; /* 62.5% of the base size of 16px = 10px. */
+  background-color:rgb(252, 252, 252);
+}
+
+/* メディアクエリを追加して、画面サイズに応じてフォントサイズを調整 */
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 56.25%; /* 基本フォントサイズを9pxに設定 */
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 50%; /* 基本フォントサイズを8pxに設定 */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 43.75%; /* 基本フォントサイズを7pxに設定 */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 37.5%; /* 基本フォントサイズを6pxに設定 */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 31.25%; /* 基本フォントサイズを5pxに設定 */
+  }
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  
+  /* background-color: rgba(255, 255, 255, 80%); */
+  padding: 20px 30px 5px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 95%;
+  letter-spacing:0.2rem;
+}
+
+/* .header-logo {
+  height: 5rem;
+} */
+
+.global-nav {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.global-nav a {
+  /* background-color: rgba(252, 252, 252, 30); */
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  text-shadow: 
+  1px 1px 10px #FFFFFF, 
+  -1px -1px 10px #FFFFFF,
+  -1px 1px 10px #FFFFFF,
+  1px -1px 10px #FFFFFF,
+  1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.global-nav .nav-item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+footer{
+  background-color: #BBBBBB;
+  height:150px;
+  margin-top: 200px;
+  display: flex; /* Flexboxを使用 */
+  align-items: center; /* 垂直方向に中央揃え */
+  justify-content: center;
+}
+
+footer p{
+  font-size: 2rem;
+  margin: 0;
+  color:rgb(252, 252, 252);
+}
+
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  text-align: center;
+}
+
+.top h1 {
+  color: #FF7E90;
+  letter-spacing: 2rem;
+  position: absolute;
+  margin: 0;
+  z-index: 2;
+  font-size: 5rem;
+}
+
+.background-logo {
+  opacity: 10%;
+  /* transform: scale(5); */
+  width: 40%;
+  z-index: 1;
+}
+
+.works {
+  padding: 2rem 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top:50px;
+}
+
+/* .works h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+} */
+
+.work-item {
+  width:35%;
+  box-sizing: border-box;
+  margin: 5%;
+}
+
+.work-item h3 {
+  font-weight: 500;
+  font-size: 1.7rem;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+
+.work-item p {
+  font-weight: 400;
+  color:#A3A3A3;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  margin-left: 1rem;
+}
+
+.work-item img {
+  width: 100%;
+  height: auto;
+  border-radius:15px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}

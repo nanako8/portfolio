@@ -1,0 +1,71 @@
+.background-img{
+  width: 100%;
+  height: 50rem;
+  object-fit:cover
+}
+
+.contact{
+  margin: 20rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2{
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  font-weight: bolder;
+  margin: 10px;
+  text-align: center;
+  color:#FF7E90;
+  margin-bottom: 6rem;
+}
+
+p{
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin-top: 5rem;
+}
+
+.contact-form{
+  width:50%;
+  margin: 5rem auto 0;
+}
+
+.contact-form input[type=text],
+.contact-form textarea{
+  display: block;
+  width: 100%;
+  margin-bottom:10px;
+  padding:15px;
+  border: 2px solid #FFD900;
+  border-radius: 10px;
+  background-color:rgba(255,255,255,0.05);
+  outline:none;
+}
+
+.contact-form textarea{
+  height: 15rem;
+}
+
+.contact-form input[type=submit]{
+  display: block;
+  width:20rem;
+  margin:40px auto 0;
+  padding:15px;
+  border:2px solid #FFD900;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px rgba(0,0,0,0.03);
+}
+
+.contact-form input[type=submit]:hover{
+  background-color:#FFD900;
+}
+
+::placeholder {
+  font-family: 'Yu Gothic UI', sans-serif;
+  font-size: 1.5rem; /* 必要に応じてフォントサイズを調整 */
+  color: rgb(152, 151, 146);
+}

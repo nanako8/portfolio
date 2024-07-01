@@ -1,0 +1,176 @@
+.background-img{
+  width:100%;
+  height: 50rem;
+  object-fit:cover
+}
+
+/* .profile-img{
+  width: 30%;
+} */
+
+.profile{
+  margin: 20rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2{
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  font-weight: bolder;
+  margin: 10px;
+  text-align: center;
+}
+
+.name-k{
+  font-size: 2rem;
+}
+
+.profile p{
+  margin: 6rem 0;
+  /* text-align: center; */
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+.skills-wrapper h2, .strength-wrapper h2{
+  color:#FF7E90;
+  margin-bottom: 6rem;
+}
+
+/* .skill {
+  flex: 1 1 calc(33.333% - 2rem); 
+  margin: 0.5rem;
+  text-align: center;
+} */
+
+.skill img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 5.7rem;
+}
+
+h3{
+  font-size: 3rem;
+  font-family: 'Yu Gothic';
+  margin-bottom: 1.5rem;
+  font-weight:500;
+}
+
+p{
+  font-size: 1.6rem;
+  margin-bottom: 5.2rem;
+  line-height: 3rem;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+}
+
+h4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* スキルセクションのレイアウトを調整 */
+.skills {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 17rem;
+  padding: 0 10rem;
+}
+
+.skill {
+  flex: 1 1 calc(33.333% - 2rem); /* 3列レイアウト */
+  margin: 0.5rem;
+  text-align: center;
+}
+
+@media (max-width: 1050px) {
+  .skills {
+    margin-bottom: 10rem;
+  }
+
+  .skill {
+    flex: 1 1 100%; /* 1列レイアウト */
+  }
+}
+
+
+
+/* @media (max-width: 1050px) {
+  .skills {
+    margin: 0;
+  }
+
+  .skill {
+    flex: 1 1 100%; /* 1列レイアウト */
+/* }
+} */
+
+
+@media (min-width: 901px) {
+
+  .strength {
+    display: flex;
+    /* align-items: center; 縦方向の中央揃え */
+    flex-wrap: wrap; /* 必要に応じて改行を許可 */
+    /* float: left; */
+    margin:5rem 30rem;
+    height:15rem;
+    border-top: solid 2px rgb(232, 232, 235);
+  }
+  
+  .strength h3, .strength p {
+    margin: 20px 10px; /* 適切なマージンを追加 */
+  }
+  
+  .strength h3 {
+    margin-right: 20px; /* 必要に応じて調整 */
+  }
+  
+  .strength p {
+    flex: 1; /* 横幅を可能な限り広げる */
+    /* float:left; */
+  }
+
+  .strength-title{
+    width:20rem;
+    margin-right:3rem
+  }
+  
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+  .strength{
+    height:15rem;
+    margin:5rem 20rem;
+  }
+  .strength-title{
+    width:19rem;
+    /* margin-right:3rem */
+  }
+  
+}
+
+@media (max-width: 900px) {
+  .strength-title{
+    width:30rem;
+    margin-bottom: 1rem;
+    border-bottom: solid 2px rgb(232, 232, 235);
+  }
+
+  .strength {
+    /* float: left; */
+    flex-wrap: wrap; /* 必要に応じて改行を許可 */
+    /* float: left; */
+    margin:2rem 7rem;
+  }
+
+}
