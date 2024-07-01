@@ -171,13 +171,13 @@ h3{
 
 @media(max-width:1200px){
   .detail6,.detail7, .detail8{
-    width: 90%;
-    margin-bottom: 2rem; /* 各要素の間にスペースを追加 */
+    width: 80%;
+    margin-bottom: 5rem; /* 各要素の間にスペースを追加 */
   }
 }
-@media(max-width:900px){
+@media(max-width:800px){
   .detail6,.detail7, .detail8{
-    width: 100%;
-    margin-bottom: 2rem; /* 各要素の間にスペースを追加 */
+    width: 90%;
+    margin-bottom: 10rem; /* 各要素の間にスペースを追加 */
   }
 }
