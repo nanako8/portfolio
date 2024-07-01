@@ -11,6 +11,42 @@ html,body{
 }
 
 
+.circle span.mask{
+	position: relative;/*波紋の基点となる位置を定義*/
+    display: block;
+    line-height: 0;/*行の高さを0にする*/
+    overflow: hidden;/*拡大してはみ出る要素を隠す*/
+}
+
+.circle span.mask::before {
+	position: absolute;
+	content:"";
+	transform: scale(0);/*円の大きさ初期値は0*/
+	opacity: 0;/*透過0*/
+	width:100%;/*円のサイズ指定*/
+	height:100%;/*円のサイズ指定*/
+	border-radius:50%;/*円の角丸指定*/
+	background: rgba(255,255,255,0.4);/*円の背景色*/
+}
+
+.circle span.mask:hover::before {/*hoverした時の変化*/
+	animation: circle 0.75s;/*アニメーションの名前と速度を定義*/
+}
+
+@keyframes circle {
+  0% {
+  transform: scale(0);
+  opacity: 1;/*透過なし*/
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+  transform: scale(2);/*アニメーションで大きくなった2倍の円の指定*/
+  }
+}
+
+
 
 .top {
   display: flex;
@@ -20,7 +56,7 @@ html,body{
   position: relative;
   height: 90rem;
   width:100%;
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* .background-img{
@@ -37,6 +73,7 @@ html,body{
   margin: 0;
   z-index: 2;
   font-size: 5rem;
+  /* text-align: center; */
 }
 
 .background-logo {
@@ -103,6 +140,10 @@ html,body{
   .work-item {
     width: 90%;
     margin: 3rem 0;
+  }
+  .top h1 {
+    font-size: 3.5rem;
+    /* text-align: center; */
   }
 }
 
