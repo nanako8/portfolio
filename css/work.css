@@ -12,7 +12,8 @@
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.title, .details{
+.title,
+.details {
   margin: 0 14rem;
 }
 
@@ -26,11 +27,11 @@ h2 {
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
   margin-bottom: 2rem;
-  color: #FF7E90;
+  color: #ff7e90;
   opacity: 80%;
 }
 
-h3{
+h3 {
   font-size: 2.3rem;
   letter-spacing: 0.2rem;
   margin-bottom: 2%;
@@ -38,56 +39,53 @@ h3{
   font-weight: bold;
 }
 
-.title a{
+.title a {
   display: block;
-  color: #FF7E90;
+  color: #ff7e90;
 }
 
-  
-  .detail1{
-    width: 60%;
-    /* margin: 5%; */
+.detail1 {
+  width: 60%;
+  /* margin: 5%; */
+}
+
+@media (max-width: 1100px) {
+  .title,
+  .details {
+    margin: 0 10rem;
   }
 
-  @media(max-width:1100px){
-  
-    .title, .details{
-      margin: 0 10rem;
-    }
+  .work-img {
+    width: 70%;
+  }
 
-    .work-img {
-      width: 70%;
-    }
-
-    .detail1{
+  .detail1 {
     width: 80%;
     /* margin: 5%; */
   }
-  
-  }
-@media(max-width:900px){
-  
-  .title, .details{
+}
+@media (max-width: 900px) {
+  .title,
+  .details {
     margin: 0 10rem;
   }
 }
 
-@media(max-width:750px){
-  
-  .title, .details{
+@media (max-width: 750px) {
+  .title,
+  .details {
     margin: 0 7rem;
   }
 
-  .detail1{
+  .detail1 {
     width: 100%;
     /* margin: 5%; */
   }
 }
 
-
-@media(max-width:500px){
-  
-  .title, .details{
+@media (max-width: 500px) {
+  .title,
+  .details {
     margin: 0 2.5rem;
   }
 
@@ -102,12 +100,13 @@ h3{
   }
 }
 
-.details p{
+.details p {
   font-size: 2rem;
   line-height: 4rem;
 }
 
-.title p , .title a{
+.title p,
+.title a {
   margin: 6rem 0;
   letter-spacing: 0.2rem;
   font-size: 2rem;
@@ -115,27 +114,26 @@ h3{
 }
 
 /* ----------------------work2---------------------- */
-@media(min-width:751px){
-  .game-mob{
-      display: none !important;
+@media (min-width: 751px) {
+  .game-mob {
+    display: none !important;
   }
 }
-@media(max-width:750px){
-  .game-pc{
-      display: none !important;
-      
+@media (max-width: 750px) {
+  .game-pc {
+    display: none !important;
   }
 }
 
 /* ----------------------work3---------------------- */
-.img-container3{
+.img-container3 {
   display: flex;
   justify-content: center;
   align-items: center;
   /* height: 80rem; */
 }
 
-.detail3{
+.detail3 {
   width: 40%;
 }
 
@@ -157,27 +155,59 @@ h3{
 }
 
 /* ----------------------work6,7,8---------------------- */
-.img-container6,.img-container7, .img-container8{
+.img-container6,
+.img-container7,
+.img-container8 {
   display: flex;
   flex-direction: column; /* 縦並びにする */
   /* justify-content: center; */
   align-items: center;
 }
 
-.detail6,.detail7, .detail8{
+.detail6,
+.detail7,
+.detail8 {
   width: 50%;
   margin-bottom: 2rem; /* 各要素の間にスペースを追加 */
 }
 
-@media(max-width:1200px){
-  .detail6,.detail7, .detail8{
+@media (max-width: 1200px) {
+  .detail6,
+  .detail7,
+  .detail8 {
     width: 80%;
     margin-bottom: 5rem; /* 各要素の間にスペースを追加 */
   }
 }
-@media(max-width:800px){
-  .detail6,.detail7, .detail8{
+@media (max-width: 800px) {
+  .detail6,
+  .detail7,
+  .detail8 {
     width: 90%;
     margin-bottom: 10rem; /* 各要素の間にスペースを追加 */
   }
+}
+
+.movie {
+  display: flex;
+  justify-content: center;
+  /* height: auto; */
+  margin: 0;
+  aspect-ratio: 13/9;
+}
+
+.movie iframe {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 13/9;
+  /* アスペクト比を指定 */
+}
+
+.movie {
+  object-fit: cover;
+  width: 80%;
+  height: auto;
+  aspect-ratio: 9/13;
+  /* アスペクト比を指定 */
 }
