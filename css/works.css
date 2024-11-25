@@ -76,6 +76,8 @@ body {
   margin: 0;
   z-index: 2;
   font-size: 5rem;
+  /* margin: auto 0; */
+  text-align: center;
   /* text-align: center; */
 }
 
@@ -90,8 +92,8 @@ body {
   padding: 2rem 5%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin-top: 50px;
+  justify-content: center;
 }
 
 /* .works h2 {
