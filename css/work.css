@@ -143,15 +143,21 @@ h3 {
   padding: 10rem 0;
   display: flex;
   justify-content: center;
-  height: auto;
-  margin: 0;
+  margin: 0 auto;
+  max-height: 80vh;
+}
+
+.v-vertical {
+  aspect-ratio: 13/9;
+}
+
+.v-horizontal {
+  aspect-ratio: 9/13;
 }
 
 .video iframe {
   object-fit: cover;
   width: 100%;
-  height: auto;
-  aspect-ratio: 13/9; /* アスペクト比を指定 */
 }
 
 /* ----------------------work6,7,8---------------------- */
@@ -191,7 +197,6 @@ h3 {
 .movie {
   display: flex;
   justify-content: center;
-  /* height: auto; */
   margin: 0;
   aspect-ratio: 13/9;
 }
