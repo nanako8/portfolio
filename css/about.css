@@ -28,14 +28,16 @@ h2 {
 }
 
 .profile p {
-  margin: 6rem 0;
+  margin: 6rem 5rem;
   /* text-align: center; */
   font-size: 2rem;
   line-height: 4rem;
 }
 
-.skills-wrapper h2, .strength-wrapper h2, .photos-wrapper h2 {
-  color: #FF7E90;
+.skills-wrapper h2,
+.strength-wrapper h2,
+.photos-wrapper h2 {
+  color: #ff7e90;
   margin-bottom: 6rem;
 }
 
@@ -53,7 +55,7 @@ h2 {
 
 h3 {
   font-size: 3rem;
-  font-family: 'Yu Gothic';
+  font-family: "Yu Gothic";
   margin-bottom: 1.5rem;
   font-weight: 500;
 }
@@ -88,6 +90,10 @@ h4 {
   text-align: center;
 }
 
+.skill p {
+  text-align: center;
+}
+
 @media (max-width: 1050px) {
   .skills {
     margin-bottom: 10rem;
@@ -104,19 +110,20 @@ h4 {
     /* align-items: center; 縦方向の中央揃え */
     flex-wrap: wrap; /* 必要に応じて改行を許可 */
     /* float: left; */
-    margin: 5rem 30rem;
+    margin: 5rem 10rem;
     height: 15rem;
     border-top: solid 2px rgb(232, 232, 235);
   }
-  
-  .strength h3, .strength p {
+
+  .strength h3,
+  .strength p {
     margin: 20px 10px; /* 適切なマージンを追加 */
   }
-  
+
   .strength h3 {
     margin-right: 20px; /* 必要に応じて調整 */
   }
-  
+
   .strength p {
     flex: 1; /* 横幅を可能な限り広げる */
     /* float:left; */
@@ -131,7 +138,7 @@ h4 {
 @media (max-width: 1200px) {
   .strength {
     height: 15rem;
-    margin: 5rem 20rem;
+    margin: 5rem 100px;
   }
   .strength-title {
     width: 19rem;
@@ -141,7 +148,7 @@ h4 {
 
 @media (max-width: 900px) {
   .strength-title {
-    width: 30rem;
+    width: 100%;
     margin-bottom: 1rem;
     border-bottom: solid 2px rgb(232, 232, 235);
   }
@@ -159,7 +166,7 @@ h4 {
     /* float: left; */
     flex-wrap: wrap; /* 必要に応じて改行を許可 */
     /* float: left; */
-    margin: 6rem 2rem;
+    margin: 6rem 6rem;
   }
 }
 
@@ -213,7 +220,8 @@ h4 {
   opacity: 0.2; /* ホバー時に画像を少し透明に */
 }
 
-.photo-item:hover h3, .photo-item:hover p {
+.photo-item:hover h3,
+.photo-item:hover p {
   opacity: 1; /* ホバー時に文字を表示 */
 }
 
@@ -237,6 +245,17 @@ h4 {
 @media (max-width: 480px) {
   .photo-item {
     width: 90%;
-    margin: 4rem 0;
+    padding: 4rem 0;
   }
+}
+
+.tool {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.tool-wrpper p {
+  /* width: max-content; */
+  margin: auto;
+  text-align: center;
 }
